@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Pruebas">
+
+ <parameter name="browser" value="chrome"></parameter>
+  
+  <test thread-count="5" name="Test"  enabled="true" >
+    <classes>
+      <class name="test.IngresarDoctorTest"/>
+    </classes>
+  </test> <!-- Test -->
+  
+  
+  <test thread-count="5" name="Test2"  enabled="true" >
+    <classes>
+      <class name="test.IngresarPacienteTest"/>
+    </classes>
+  </test> <!-- Test -->
+  
+  
+   <test thread-count="5" name="Test3"  enabled="true" >
+    <classes>
+      <class name="test.IngresarHabitacionTest"/>
+    </classes>
+  </test> <!-- Test -->
+  
+</suite> <!-- Suite -->
